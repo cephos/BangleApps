@@ -1,0 +1,14 @@
+{ "id": "mqttsmarthome",
+  "name": "MQTT Smarthome",
+  "shortName":"MQTT Home",
+  "icon": "app.png",
+  "version":"0.01",
+  "description": "Smarthome-Control into MQTT via MQTT-Enabled GadgetBridge App",
+  "tags": "",
+  "supports" : ["BANGLEJS2"],  
+  "readme": "README.md",
+  "storage": [
+    {"name":"mqttsmarthome.app.js","url":"app.js"},
+    {"name":"mqttsmarthome.img","url":"app.icon.js","evaluate":true}
+  ]
+}
