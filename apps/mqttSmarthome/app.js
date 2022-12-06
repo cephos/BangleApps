@@ -84,7 +84,7 @@ function toggleButton(onCommand,offCommand,id){
 }
 
 function command(com){
-  Bluetooth.println(JSON.stringify({t:"mqtt",qos:0, topic:"bangles/1/cmd", data:com}));
+  Bluetooth.println(JSON.stringify({t:"mqtt",qos:0, topic:"bangles/1/"+com, data:"pressed"}));
 }
 
 loadTab(firstTabKey);
