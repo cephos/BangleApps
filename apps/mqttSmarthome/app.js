@@ -65,7 +65,6 @@ function loadTab(key){
     }
     c1++;
   });
-  print(JSON.stringify(layoutContent));
   Bangle.loadWidgets();
   layout=new Layout( layoutContent, {btns:buttons, lazy:false});
   g.clear();
@@ -73,12 +72,12 @@ function loadTab(key){
 }
 
 function toggleButton(onCommand,offCommand,id){
-  print(JSON.stringify(layout));
-  print("id ="+id);
   if(layout[id].bgCol=='#f00'){
     command(offCommand);
+    layout[id].bgCol='#f00';
   }else{
     command(onCommand);
+    layout[id].bgCol='#000';
   }
   layout.render();
 }
