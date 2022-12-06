@@ -7,3 +7,9 @@
       use Layout library and display ETA
 0.07: Add check for day of week
 0.08: Update to new time_utils module
+0.09: Vibrate with configured pattern
+      Add setting to defer start of algorithm
+      Add setting to disable scheduler alarm
+0.10: Fix: Do not wake when falling asleep
+0.11: Minor tweaks
+0.12: Support javascript command to execute as defined in scheduler 'js' configuration

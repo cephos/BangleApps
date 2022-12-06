@@ -1,7 +1,6 @@
 <html>
   <head>
     <link rel="stylesheet" href="../../css/spectre.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.css">
   </head>
   <body>
     <p>Please select a wakeup day:</p>
@@ -31,7 +30,7 @@ function getData() {
     // remove window
     Util.hideModal();
 
-    logs = logs.filter(log => log != null);
+    logs = logs.filter(log => log != null && log.filter(entry => entry.type === "alarm").length > 0);
     logs.sort(function(a, b) {return new Date(b?.filter(entry => entry.type === "alarm")[0]?.time) - new Date(a?.filter(entry => entry.type === "alarm")[0]?.time)}); // sort by alarm date desc
     logs.forEach((log, i) => {
       const timeStr = log.filter(entry => entry.type === "alarm")[0]?.time;
