@@ -1,4 +1,4 @@
-{ "id": "mqttsmarthome",
+{ "id": "mqttSmarthome",
   "name": "MQTT Smarthome",
   "shortName":"MQTT Home",
   "icon": "app.png",
@@ -8,7 +8,7 @@
   "supports" : ["BANGLEJS2"],  
   "readme": "README.md",
   "storage": [
-    {"name":"mqttsmarthome.app.js","url":"app.js"},
-    {"name":"mqttsmarthome.img","url":"app.icon.js","evaluate":true}
+    {"name":"mqttSmarthome.app.js","url":"app.js"},
+    {"name":"mqttSmarthome.img","url":"app.icon.js","evaluate":true}
   ]
 }
